@@ -8,6 +8,9 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
+	<nav class="navbar  navbar-dark bg-dark">
+	  <a class="navbar-brand" href="#">Employee Salary Report</a>
+	</nav>
 	<%
 		response.setHeader("Cache-Control","no-cache, no-store, must-revalidate");
 		response.setHeader("Pragma", "no-cache");
@@ -63,10 +66,11 @@
 	      <td scope="col"><b><%="INR "+bonus %></b></th>
 	    </tr>
 	</tbody>
-	</table>
+	</table>	
+	<hr/>
 	
-	<form action="LogOut">
-	<input type="submit" value="LogOut">
+	<form style="margin-left: 700px; width: 500px;" action="LogOut">
+		<input class="btn btn-dark" type="submit" value="LogOut">
 	</form>
 </body>
 </html>

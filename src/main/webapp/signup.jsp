@@ -12,19 +12,50 @@
 	  <a class="navbar-brand" href="#">Employee Sign Up</a>
 	</nav>
 	
-	<form action="SignUp" method="post">
-		Employee ID : <input type="text" name="emp_id"><br/>
-		First Name : <input type="text" name="fname"><br/>
-		Last Name : <input type="text" name="lname"><br/>
-		Date of Birth : <input type="text" name="dob"><br/>
-		Contact no. : <input type="text" name="con_no"><br/>
-		Password : <input type="password" name="pass"><br/>
-		<input type="submit" value="SignUp">
+	<form style="margin: auto; width: 500px;" action="SignUp" method="post">
+	<br/>
+	<div class="input-group mb-3">
+	  <div class="input-group-prepend">
+	    <span class="input-group-text" id="basic-addon1">Employee ID</span>
+	  </div>
+	  <input type="text" class="form-control" placeholder="Employee ID" name="emp_id">
+	</div>
+	<div class="input-group mb-3">
+	  <div class="input-group-prepend">
+	    <span class="input-group-text" id="basic-addon1">First Name</span>
+	  </div>
+	  <input type="text" class="form-control" placeholder="First Name" name="fname">
+	</div>
+	<div class="input-group mb-3">
+	  <div class="input-group-prepend">
+	    <span class="input-group-text" id="basic-addon1">Last Name</span>
+	  </div>
+	  <input type="text" class="form-control" placeholder="Last Name" name="lname">
+	</div>
+	<div class="input-group mb-3">
+	  <div class="input-group-prepend">
+	    <span class="input-group-text" id="basic-addon1">Date of Birth</span>
+	  </div>
+	  <input type="text" class="form-control" placeholder="Date of Birth" name="dob">
+	</div>
+	<div class="input-group mb-3">
+	  <div class="input-group-prepend">
+	    <span class="input-group-text" id="basic-addon1">Contact No.</span>
+	  </div>
+	  <input type="text" class="form-control" placeholder="Contact No." name="con_no">
+	</div>
+	<div class="input-group mb-3">
+	  <div class="input-group-prepend">
+	    <span class="input-group-text" id="basic-addon1">Password</span>
+	  </div>
+	  <input type="password" class="form-control" placeholder="Password" name="pass">
+	</div>
+
+		<input style="margin-left:200px;" class="btn btn-dark" type="submit" value="SignUp">
 	</form>
 	<br/>
-	<br/>
 	<form action="login.jsp" method="post">
-		<input type="submit" value="Login">
+		<input style="margin-left:725px;"class="btn btn-dark" type="submit" value="Login">
 	</form>
 	
 </body>
